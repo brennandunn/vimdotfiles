@@ -61,7 +61,8 @@ vnoremap <tab> %
 
 set wrap
 set formatoptions=qrn1
-set statusline=%<%F%=\ [%M%R%H%Y]\ (%(%l,%c%))
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
 
 " use ack
 set grepprg=ack
